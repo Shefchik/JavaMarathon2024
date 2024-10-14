@@ -15,7 +15,7 @@ public class Task2 {
         if(aNumber < bNumber) {
             for (int counter = aNumber; counter < bNumber; counter++){
                 if(counter%modFive == 0 & counter%modTen != 0){
-                    System.out.print(counter  + ((bNumber - counter + 1) <= modFive ? "" : " "));
+                    System.out.print(counter + " ");
                 }
             }
         }else{

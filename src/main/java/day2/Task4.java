@@ -10,15 +10,14 @@ public class Task4 {
         System.out.print("Введите чилсо x: ");
         double xNumber = scn.nextDouble();
         double yNumber;
-        if(xNumber > lowerLimit){
-            if(xNumber > lowerLimit && xNumber < upperLimit){
-                yNumber = (xNumber + 3) * (Math.pow(xNumber, 2) - 2);
-            }else{
-                yNumber = (Math.pow(xNumber, 2) - 10) / (xNumber + 7);
-            }
-            System.out.println("y равен:" + yNumber);
+
+        if(xNumber > lowerLimit && xNumber < upperLimit){
+            yNumber = (xNumber + 3) * (Math.pow(xNumber, 2) - 2);
+        }else if(xNumber >= upperLimit){
+            yNumber = (Math.pow(xNumber, 2) - 10) / (xNumber + 7);
         }else{
-            System.out.println("Вы ввели некорректное значение x!");
+            yNumber = 420;
         }
+        System.out.println("y равен:" + yNumber);
     }
 }

@@ -16,7 +16,7 @@ public class Task3 {
             int counter = aNumber;
             while(counter < bNumber){
                 if(counter%modFive == 0 & counter%modTen != 0){
-                    System.out.print(counter  + ((bNumber - counter + 1) <= modFive ? "" : " "));
+                    System.out.print(counter + " ");
                 }
                 counter++;
             }
