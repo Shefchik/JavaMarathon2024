@@ -38,6 +38,6 @@ public class Task2 {
         System.out.println("Наибольший элемент массива: " + maxNumber);
         System.out.println("Наименьший элемент массива: " + minNumber);
         System.out.println("Количество элементов массива, оканчивающихся на 0: " + numberOfZeroEnded);
-        System.out.println("Сумма элементов массива, оканчивающихся на 0: " + sumNumberOfZeroEnded);
+        System.out.println("Сумма  элементов массива, оканчивающихся на 0: " + sumNumberOfZeroEnded);
     }
 }

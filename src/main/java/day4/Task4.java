@@ -31,6 +31,7 @@ public class Task4 {
                 }
             }
         }
+
         System.out.println(Arrays.toString(numbers));
         System.out.println(maxSumOfNumbers);
         System.out.println(maxIndex);

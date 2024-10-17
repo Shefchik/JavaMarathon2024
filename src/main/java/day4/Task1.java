@@ -4,9 +4,10 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class Task1 {
+
     public static void main(String[] args){
         Scanner scn = new Scanner(System.in);
-        System.out.print("Введите размерность массива(число n): ");
+        System.out.print("Введите  размерность массива(число n): ");
         int arrayLength = scn.nextInt();
         int numbers[] = new int[arrayLength];
         int eightNumber = 8;
