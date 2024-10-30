@@ -26,8 +26,10 @@ public class Airplane {
         String str;
         if(planeOne.length > planeTwo.length){
             str = "Первый самолет длиннее";
-        }else{
+        }else if(planeOne.length < planeTwo.length){
             str = "Второй самолет длиннее";
+        }else{
+            str = "Самолеты равны по длине";
         }
         System.out.println(str);
     }
