@@ -15,9 +15,6 @@ public class Airplane {
         this.fuel = 0;
     }
 
-    void info(){
-        System.out.println(toString());
-    }
     public static void vewMaxLengthWithinTheTwo(Airplane planeOne, Airplane planeTwo){
         String str;
         if(planeOne.length > planeTwo.length){
@@ -29,12 +26,12 @@ public class Airplane {
         }
         System.out.println(str);
     }
-    public String toString(){
-        return "Изготовитель: " + this.manufacturer
-                + ", год выпуска: " + this.year
-                + ", длина: " + length
-                + ", вес: " + this.weight
-                + ", количество топлива в баке: " + getFuel();
+    public void info(){
+        System.out.println("Изготовитель: " + this.manufacturer
+                            + ", год выпуска: " + this.year
+                            + ", длина: " + length
+                            + ", вес: " + this.weight
+                            + ", количество топлива в баке: " + getFuel());
     }
     public void fillUp(int n){
         this.fuel += n;
