@@ -1,7 +1,7 @@
 package day9;
 
 public class TestFigures {
-    private static final String LOOKEDFORCOLOR = "Red";
+    private static final String LOOKED_FOR_COLOR = "Red";
 
     public static  void main(String[] args){
 
@@ -21,7 +21,7 @@ public class TestFigures {
     public static double calculateRedPerimeter(Figure[] figures){
         double result = 0;
         for(Figure figure : figures){
-            if(LOOKEDFORCOLOR.equals(figure.getColor())){
+            if(LOOKED_FOR_COLOR.equals(figure.getColor())){
                 result += figure.perimeter();
             }
         }
@@ -30,7 +30,7 @@ public class TestFigures {
     public static double calculateRedArea(Figure[] figures){
         double result = 0;
         for(Figure figure : figures){
-            if(LOOKEDFORCOLOR.equals(figure.getColor())){
+            if(LOOKED_FOR_COLOR.equals(figure.getColor())){
                 result += figure.area();
             }
         }
