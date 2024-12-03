@@ -27,6 +27,7 @@ public class TestFigures {
         }
         return result;
     }
+
     public static double calculateRedArea(Figure[] figures){
         double result = 0;
         for(Figure figure : figures){
