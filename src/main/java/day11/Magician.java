@@ -19,9 +19,6 @@ public class Magician extends Hero implements  MagicAttack, PhysAttack{
                 ", physDef: " + super.getPhysDef() + ", magicDef: " + super.getMagicDef() + "}";
     }
 
-    public void physicalAttack(Hero hero){
-        hero.decreaseHealth((int) (super.getPhysAtt() - super.getPhysAtt() * (double)hero.getPhysDef()/100));
-    }
 
     public void magicalAttack(Hero hero){
         hero.decreaseHealth((int) (getMagicAtt() - getMagicAtt() * (double)hero.getMagicDef()/100));

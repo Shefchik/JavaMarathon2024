@@ -31,10 +31,6 @@ public class Shaman extends Hero implements  Healer, MagicAttack, PhysAttack {
                 ", healHimSelf: " + getHealHimself() + ", healTeamMate: " + getHealTeammate() + "}";
     }
 
-    public void physicalAttack(Hero hero){
-        hero.decreaseHealth((int) (super.getPhysAtt() - super.getPhysAtt() * (double)hero.getPhysDef()/100));
-    }
-
     public void magicalAttack(Hero hero){
         hero.decreaseHealth((int) (getMagicAtt() - getMagicAtt() * (double)hero.getMagicDef()/100));
     }

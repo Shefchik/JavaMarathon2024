@@ -65,4 +65,8 @@ public abstract class  Hero {
 
     public abstract String toString();
 
+    public void physicalAttack(Hero hero){
+        hero.decreaseHealth((int) (getPhysAtt() - getPhysAtt() * (double)hero.getPhysDef()/100));
+    }
+
 }

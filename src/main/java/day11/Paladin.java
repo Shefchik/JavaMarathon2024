@@ -28,11 +28,6 @@ public class Paladin extends Hero implements PhysAttack {
                     ", healHimSelf: " + getHealHimself() + ", healTeamMate: " + getHealTeammate() + "}";
     }
 
-    public void physicalAttack(Hero hero){
-        hero.decreaseHealth((int) (super.getPhysAtt() - super.getPhysAtt() * (double)hero.getPhysDef()/100));
-    }
-
-
     public int getHealHimself() {
         return healHimself;
     }
