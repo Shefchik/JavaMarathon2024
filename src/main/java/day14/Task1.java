@@ -18,8 +18,7 @@ public class Task1 {
             String line = scn.nextLine();
             String stringNumbers[] = line.split(" ");
             int counter = 0;
-            int[] numbers;
-            numbers = new int[100];
+            int[] numbers = new int[100];
             int numbersSum = 0;
             for(String number : stringNumbers){
                 numbers[counter] =Integer.parseInt(number);
@@ -27,14 +26,14 @@ public class Task1 {
                 counter++;
             }
             if((counter) < (ARRAY_SIZE) || (counter) > ARRAY_SIZE){
-                throw new IOException();
+                throw new IOException("Некорректный входной файл");
             }
             System.out.println(numbersSum);
         } catch (FileNotFoundException e) {
             System.out.println("Файл не найден");
         }
         catch (IOException e) {
-            System.out.println("Некорректный входной файл");
+            System.out.println(e.getMessage());
         }
     }
 

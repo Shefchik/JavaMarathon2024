@@ -1,8 +1,8 @@
 package day14;
 
 public class Person {
-    String name;
-    int age;
+    private String name;
+    private int age;
 
     public void setName(String name) {
         this.name = name;
