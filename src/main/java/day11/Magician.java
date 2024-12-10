@@ -1,27 +1,21 @@
 package day11;
 
-public class Magician extends Hero implements Healer, MagicAttack, PhysAttack{
+public class Magician extends Hero implements  MagicAttack, PhysAttack{
+    private int magicAtt;
+
     public Magician() {
         super();
         super.setPhysAtt(5);
-        super.setMagicAtt(20);
+        setMagicAtt(20);
         super.setPhysDef(0);
         super.setMagicDef(80);
-        super.setHealHimself(0);
-        super.setHealTeammate(0);
+
     }
 
-    public void healHimself(){
-        increaseHealth(getHealHimself());
-    }
-
-    public void healTeammate(Hero hero){
-        hero.increaseHealth(getHealTeammate());
-    }
 
     @Override
     public String toString() {
-        return "{health: " + super.getHealth() + ", physAtt: " + super.getPhysAtt() + ", magicAtt: " + super.getMagicAtt() +
+        return "{health: " + super.getHealth() + ", physAtt: " + super.getPhysAtt() + ", magicAtt: " + getMagicAtt() +
                 ", physDef: " + super.getPhysDef() + ", magicDef: " + super.getMagicDef() + "}";
     }
 
@@ -30,7 +24,14 @@ public class Magician extends Hero implements Healer, MagicAttack, PhysAttack{
     }
 
     public void magicalAttack(Hero hero){
-        hero.decreaseHealth((int) (super.getMagicAtt() - super.getMagicAtt() * (double)hero.getMagicDef()/100));
+        hero.decreaseHealth((int) (getMagicAtt() - getMagicAtt() * (double)hero.getMagicDef()/100));
     }
 
+    public int getMagicAtt() {
+        return magicAtt;
+    }
+
+    public void setMagicAtt(int magicAtt) {
+        this.magicAtt = magicAtt;
+    }
 }

@@ -6,28 +6,21 @@ public abstract class  Hero {
 
     private int physAtt;
 
-    private int magicAtt;
 
     private int physDef;
     private int magicDef;
-    private int healHimself;
-    private int healTeammate;
 
     public void setPhysAtt(int physAtt) {
         this.physAtt = physAtt;
     }
 
-    public void setMagicAtt(int magicAtt) {
-        this.magicAtt = magicAtt;
-    }
+
 
     public int getPhysAtt() {
         return physAtt;
     }
 
-    public int getMagicAtt() {
-        return magicAtt;
-    }
+
 
     public void setPhysDef(int physDef) {
         this.physDef = physDef;
@@ -37,13 +30,6 @@ public abstract class  Hero {
         this.magicDef = magicDef;
     }
 
-    public void setHealHimself(int healHimself) {
-        this.healHimself = healHimself;
-    }
-
-    public void setHealTeammate(int healTeammate) {
-        this.healTeammate = healTeammate;
-    }
 
     public int getPhysDef() {
         return physDef;
@@ -51,14 +37,6 @@ public abstract class  Hero {
 
     public int getMagicDef() {
         return magicDef;
-    }
-
-    public int getHealHimself() {
-        return healHimself;
-    }
-
-    public int getHealTeammate() {
-        return healTeammate;
     }
 
     public  void decreaseHealth(int health){
