@@ -6,7 +6,7 @@ import java.util.List;
 public class MusicBand {
     private String name;
     private int year;
-    private List members;
+    private List<String> members;
 
     public void setName(String name) {
         this.name = name;
