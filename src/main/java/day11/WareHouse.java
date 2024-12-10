@@ -10,11 +10,11 @@ public class WareHouse {
     }
 
     public int getCountPickedOrders() {
-        return this.countPickedOrders;
+        return countPickedOrders;
     }
 
     public int getCountDeliveredOrders() {
-        return this.countDeliveredOrders;
+        return countDeliveredOrders;
     }
 
     public void setCountPickedOrders(int countPickedOrders) {
